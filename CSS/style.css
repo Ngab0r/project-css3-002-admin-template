@@ -1,11 +1,18 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .header--dark {
     background-color: rgb(51, 57, 64);
     color: rgb(236, 236, 236);
+    height: 3rem;
+    grid-area: header;
 }
 
 .header__title {
     display: inline;
     font-size: 1.25rem;
+    vertical-align: middle
 }
 
 .header__search {
@@ -31,6 +38,19 @@
 
 .main__nav {
     background-color: rgb(33, 37, 41);
+    color: rgb(148, 148, 148);
+}
+
+.nav__ul {
+    list-style-type:none;
+    padding: 1rem;
+}
+.nav__ul>li {
+    padding: 1rem;
+}
+
+.menu {
+    grid-area: menu;
 }
 
 .main__breadcrumb {
@@ -48,16 +68,37 @@
 
 .main__card--blue {
     background-color: rgb(0, 123, 255);
+    grid-area: blue-card;
 }
 
 .main__card--yellow {
     background-color: rgb(255, 193, 7);
+    grid-area: yellow-card;
 }
 
 .main__card--green {
     background-color: rgb(40, 167, 69);
+    grid-area: green-card;
 }
 
 .main__card--red {
     background-color: rgb(220, 53, 69);
+    grid-area: red-card;
+}
+
+.content {
+    grid-area: content;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu content content content content content';
+    grid-gap: 10px;
+}
+
+.main__cards {
+    display: grid;
+    grid-template-areas: 'blue-card yellow-card green-card red-card';
+    grid-gap: 10px;
+    color: #ffffff;
 }
