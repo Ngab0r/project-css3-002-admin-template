@@ -12,7 +12,6 @@ body {
 .header__title {
     display: inline;
     font-size: 1.25rem;
-    vertical-align: middle
 }
 
 .header__search {
@@ -71,6 +70,13 @@ body {
     border-top-right-radius: 0 0 .25rem .25rem;
 }
 
+.card__bottom::after {
+    content: ">";
+    float: right;
+    width: 0;
+    height: 0;
+}
+
 .main__card--blue {
     background-color: rgb(0, 123, 255);
     grid-area: blue-card;
@@ -89,15 +95,14 @@ body {
 .main__card--red {
     background-color: rgb(220, 53, 69);
     grid-area: red-card;
-    
 }
 
-.main__cards>div>div{
+.main__cards>div>div {
     padding: 1rem;
 }
 
-.card__bottom{
-    background:linear-gradient(180deg, rgba(65, 65, 65, 0.3), rgba(65,65,65, 0.1));
+.card__bottom {
+    background: linear-gradient(180deg, rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.1));
 }
 
 .content {
@@ -111,6 +116,7 @@ body {
 }
 
 .main__cards {
+    margin-top: 1rem;
     display: grid;
     grid-template-areas: 'blue-card yellow-card green-card red-card';
     grid-gap: 10px;
