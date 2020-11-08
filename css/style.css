@@ -49,6 +49,11 @@ body {
     padding: 1rem;
 }
 
+.nav__ul>li:hover {
+    color: #ffffff;
+    transform: translate(2px);
+}
+
 .nav__li--active {
     color: #ffffff;
 }
