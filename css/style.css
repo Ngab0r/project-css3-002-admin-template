@@ -42,11 +42,16 @@ body {
 }
 
 .nav__ul {
-    list-style-type:none;
+    list-style-type: none;
     padding: 1rem;
 }
+
 .nav__ul>li {
     padding: 1rem;
+}
+
+.nav__li--active {
+    color: #ffffff;
 }
 
 .menu {
@@ -84,6 +89,15 @@ body {
 .main__card--red {
     background-color: rgb(220, 53, 69);
     grid-area: red-card;
+    
+}
+
+.main__cards>div>div{
+    padding: 1rem;
+}
+
+.card__bottom{
+    background:linear-gradient(180deg, rgba(65, 65, 65, 0.3), rgba(65,65,65, 0.1));
 }
 
 .content {
